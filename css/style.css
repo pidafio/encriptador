@@ -1,0 +1,202 @@
+body{
+background-image: url('../image/fondo encriptador0.jpg');
+}
+.encabezado{
+    display: flex;
+    background: linear-gradient(rgb(20, 20, 20,1), rgb(129, 124, 124 ,0.5));
+    justify-content: center;
+}
+
+
+.tituloPagina{
+    font-size: 2em;
+    color: rgb(248, 249, 245);
+    padding: .3em
+    
+}
+
+.cuerpo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.areaDeTexto{
+   margin:1.7em 8em;
+}
+
+
+
+.texto{
+    resize: none;
+    background-image:url('../image/gadget1.jpg') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius:1em;
+    border:2px solid rgb(222, 158, 46);
+    box-shadow:0.3em 0.3em 0.8em 2px rgb(216, 245, 110);
+    font-family: arial, verdana, ms sans serif;
+    font-size: 20pt;
+    color: rgb(255, 170, 0);
+    outline: none;
+    height: 12em;
+ } 
+
+
+
+.botones{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 5em;
+   margin: 1em 9em;
+   
+} 
+#encriptar{
+    background-image:url('../image/bta.png');
+    background-position: center;
+    border-radius:50%;
+    width: 7em;
+    height: 7em;
+    color: rgb(239, 158, 20);
+    border: none;
+    box-shadow: 0 0.2em 0.8em  2px rgba(117, 117, 116, 0.997);
+    transition: 0.4s;
+    
+
+}
+#encriptar:active{ background-image:url('../image/bta.png');
+    background-position: center;
+    border-radius:50%;
+    width: 6em;
+    height: 6em;
+    /* color: rgb(239, 158, 20); */
+    border: none;
+    
+
+}
+#desencriptar{
+    background-image:url('../image/bta.png');
+    background-position: center;
+    border-radius:50%;
+    width: 7em;
+    height: 7em;
+    color: rgb(239, 158, 20);
+    border: none;
+    box-shadow: 0 0.2em 0.8em  2px rgba(117, 117, 116, 0.997);
+    transition: 0.4s;
+    
+}
+#desencriptar:active{
+    background-image:url('../image/bta.png');
+    background-position: center;
+    border-radius:50%;
+    width: 6em;
+    height: 6em;
+    color: rgb(239, 158, 20);
+    border: none;
+    box-shadow: 0 0.2em 0.8em  2px rgba(117, 117, 116, 0.997);
+    
+    
+}
+
+
+
+.TextoProcesado{
+    margin: 1.7em -1em;
+} 
+
+
+.textoResultado{
+    resize: none;
+    background-image:url('../image/resultado2.jpg') ;
+    background-position: center; 
+    border:2px solid rgb(222, 158, 46);
+    border-radius:1em;
+    box-shadow:0.3em 0.3em 0.8em 2px rgb(216, 245, 110);
+    font-family: arial, verdana, ms sans serif;
+    font-size: 20pt;
+    color: rgb(255, 170, 0);
+    outline: none;
+    height: 14.4em;
+} 
+.resultado{
+    resize: none;
+    
+    border:2px solid rgb(222, 158, 46);
+    border-radius:1em;
+    box-shadow:0.3em 0.3em 0.8em 2px rgb(216, 245, 110);
+    font-family: arial, verdana, ms sans serif;
+    font-size: 20pt;
+    color: rgb(255, 170, 0);
+    outline: none;
+
+}
+
+
+
+.copiar{
+    margin: 1em 27%;
+    background-image:url('../image/bta.png');
+    background-position: center;
+    border-radius:50%;
+    width: 4.5em;
+    height: 4.5em;
+    color: rgb(239, 158, 20);
+    border: none;
+    box-shadow: 0 0.2em 0.8em  2px rgba(117, 117, 116, 0.997);
+    
+}
+.copiar:active{
+    margin: 1em 27%;
+    background-image:url('../image/bta.png');
+    background-position: center;
+    border-radius:50%;
+    width: 3em;
+    height: 3em;
+    color: rgb(239, 158, 20);
+    border: none;
+    box-shadow: 0 0.2em 0.8em  2px rgba(117, 117, 116, 0.997);
+}
+
+
+
+@media(max-width:390px){
+    
+    .encabezado{
+        display: block;
+        text-align: center;
+    }
+    
+
+    .cuerpo{
+        display: block;
+        
+    }
+    .botones{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        gap: 2em;
+    }
+    #encriptar{
+        margin: 1em 1em 01em;
+    }
+    #desencriptar{
+    margin: 1em 1em 01em;
+    }
+
+    .TextoProcesado{
+        display: block;
+        margin:0 ;
+        text-align: center;
+    }
+    
+    .areaDeTexto{
+       
+        margin:1em;
+    }
+    .texto{
+        width: 95%;
+    }
+   
+}
